@@ -64,3 +64,8 @@ https://wa.me/6282258536288
 atau link group telegram
 
 https://t.me/rezahabibie
+<<<<<<< HEAD
+=======
+
+![Image](https://github.com/user-attachments/assets/724e5ac2-626e-4f2d-bd1f-1265b70b544f)
+>>>>>>> 3274c86fdb417a78c570d3a912fcc0d239d73bd2
