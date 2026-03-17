@@ -1,8 +1,3 @@
-## Tampilan
-<img width="1358" height="650" alt="Image" src="https://github.com/user-attachments/assets/d2689a26-9eed-4449-a0d3-2edffddd7bc6" />
-<img width="1358" height="650" alt="Image" src="https://github.com/user-attachments/assets/c13ed312-d007-4cc2-987d-e82f171dd7ce" />
-<img width="1358" height="650" alt="Image" src="https://github.com/user-attachments/assets/fdf7acae-cd32-404d-a50e-d77b59156ea5" />
-<img width="1358" height="650" alt="Image" src="https://github.com/user-attachments/assets/2d530df8-beb3-493e-ad04-8bafbc39ad3f" />
 # INSTALL GENIEACS OTOMATIS
 This is autoinstall GenieACS 
 
@@ -11,7 +6,7 @@ This is autoinstall GenieACS
 apt install git curl -y
 ```
 ```
-git clone https://github.com/alijayanet/genieacs
+git clone https://github.com/rezahabibie/genieacs
 ```
 ```
 cd genieacs
@@ -64,13 +59,10 @@ sudo mongorestore --db=genieacs --drop genieacs-backup/genieacs
 🤝 Kontribusi
 Kontribusi selalu diterima! Silakan buat pull request atau laporkan issue jika menemukan bug.
 
-https://wa.me/6281947215703
+https://wa.me/6282258536288
 
 atau link group telegram
 
-https://t.me/alijayaNetAcs
-
-SILAHKAN YANG INGIN BERBAGI UANG KOPI <br>
-https://paypal.me/warnetalijayaID
+https://t.me/rezahabibie
 
 ![Image](https://github.com/user-attachments/assets/724e5ac2-626e-4f2d-bd1f-1265b70b544f)
