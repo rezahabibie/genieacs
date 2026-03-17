@@ -274,7 +274,7 @@ echo -e "${GREEN}===============================================================
 echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL. =================${NC}"
 echo -e "${GREEN}=== Edit di Admin >> Provosions >> inform ACS URL ganti ip server ini  =====${NC}"
 echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
-echo -e "${GREEN}=================== Informasi: Whatsapp 081947215703 =======================${NC}"
+echo -e "${GREEN}=================== Informasi: Whatsapp 082258536288 =======================${NC}"
 echo -e "${GREEN}============================================================================${NC}"
 
 	telegram_message="<b>⚙️ GENIEACS INET CUSTOM</b>%0A"
