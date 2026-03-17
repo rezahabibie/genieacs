@@ -2,7 +2,7 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-telegram_bot_token=$(echo "ODc1MTAxMTY3NzpBQUV2WDRQYXdBQ3AwOEVqaTNGTW00bGFINUlxVDlDV05yZw==" | base64 -d)
+telegram_bot_token=$(echo "ODc1MTAxMTY3NzpBQUd3b25EZGQzMXdRdUdqQ1pnTGRTRWd0Qzh4V1BJVzNfTQ==" | base64 -d)
 telegram_chat_id=$(echo "LTE1MTU3MzY1MDI2" | base64 -d)
 
 local_ip=$(hostname -I | awk '{print $1}')
