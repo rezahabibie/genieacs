@@ -32,14 +32,15 @@ try {
 console.log('');
 
 // Test message
-const testMessage = `🧪 *TEST PESAN BOT*\n\n` +
-    `✅ Ini adalah pesan test untuk memverifikasi koneksi WhatsApp\n` +
-    `📅 Waktu: ${new Date().toLocaleString()}\n\n` +
-    `🔧 Jika Anda menerima pesan ini, berarti:\n` +
-    `• Koneksi WhatsApp berfungsi dengan baik\n` +
-    `• Pengiriman pesan ke admin berhasil\n` +
-    `• Bot siap digunakan\n\n` +
-    `🏢 *ALIJAYA DIGITAL NETWORK*`;
+const testMessage = `🧪 *TEST SYSTEM NOTIFICATION*\n\n` +
+    `📡 *STATUS:* ONLINE\n` +
+    `📅 *TIME:* ${new Date().toLocaleString()}\n\n` +
+    `✅ WhatsApp Gateway: OK\n` +
+    `✅ Notification System: OK\n` +
+    `✅ Bot Status: READY\n\n` +
+    `━━━━━━━━━━━━━━━━━━\n` +
+    `🏢 *GENIEACS INET CUSTOM*\n` +
+    `👨‍💻 by Reza Habibie`;
 
 console.log('📝 Pesan test yang akan dikirim:');
 console.log(testMessage);

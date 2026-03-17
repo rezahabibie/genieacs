@@ -47,11 +47,8 @@ function testIsAdminNumber(number) {
 
 // Test beberapa nomor
 const testNumbers = [
-    '6281947215703',
-    '081947215703',
-    '083807665697',
-    '082218094778',
-    '081234567890' // Nomor test yang bukan admin
+    '082258536288',
+    '08174900866' // Nomor test yang bukan admin
 ];
 
 console.log('🔍 Testing Admin Number Validation:');
@@ -62,14 +59,16 @@ for (const number of testNumbers) {
 console.log('');
 
 // Test message
-const testMessage = `🧪 *TEST ADMIN BOT*\n\n` +
-    `✅ Ini adalah pesan test untuk memverifikasi fungsi admin\n` +
-    `📅 Waktu: ${new Date().toLocaleString()}\n\n` +
-    `🔧 Jika Anda menerima pesan ini, berarti:\n` +
-    `• Fungsi isAdminNumber berfungsi dengan baik\n` +
-    `• Pengiriman pesan ke admin berhasil\n` +
-    `• Bot siap digunakan\n\n` +
-    `🏢 *ALIJAYA DIGITAL NETWORK*`;
+const testMessage = `🧪 *TEST ADMIN SYSTEM*\n\n` +
+    `📡 *STATUS:* ONLINE\n` +
+    `📅 *TIME:* ${new Date().toLocaleString()}\n\n` +
+    `🔧 *VALIDATION RESULT:*\n` +
+    `• isAdminNumber: OK\n` +
+    `• Admin Access: VERIFIED\n` +
+    `• Bot System: READY\n\n` +
+    `━━━━━━━━━━━━━━━━━━\n` +
+    `🏢 *GENIEACS INET CUSTOM*\n` +
+    `👨‍💻 by Reza Habibie`;
 
 console.log('📝 Test message yang akan dikirim:');
 console.log(testMessage);

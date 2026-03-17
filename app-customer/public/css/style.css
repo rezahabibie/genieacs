@@ -1,41 +1,108 @@
+/* ===== BASE BACKGROUND ===== */
 body {
-  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  background: #020617 !important;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
-.card {
-  border-radius: 1.2rem;
-  border: none;
+
+/* ===== CARD / PANEL ===== */
+.card, .container, .login-box {
+  background: #0f172a !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255,255,255,0.05) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4) !important;
 }
-.card .form-label {
+
+/* ===== INPUT ===== */
+input, .form-control {
+  background: #020617 !important;
+  border: 1px solid #1e293b !important;
+  color: #e5e7eb !important;
+  border-radius: 8px !important;
+}
+
+input:focus, .form-control:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 1px #3b82f6 !important;
+}
+
+/* ===== LABEL ===== */
+label, .form-label {
+  color: #9ca3af !important;
   font-weight: 500;
 }
-.btn-primary {
-  background: linear-gradient(90deg, #6366f1 0%, #2563eb 100%);
-  border: none;
+
+/* ===== BUTTON ===== */
+.btn-primary, button {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+  border: none !important;
+  color: #fff !important;
   font-weight: 600;
+  border-radius: 8px !important;
+  transition: all 0.2s ease;
 }
-.btn-primary:hover {
-  background: linear-gradient(90deg, #2563eb 0%, #6366f1 100%);
+
+.btn-primary:hover, button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb) !important;
+  transform: translateY(-1px);
 }
+
+/* ===== LOGO ===== */
 img[alt="Logo"] {
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 8px;
+  border-radius: 50% !important;
+  background: #020617 !important;
+  padding: 6px;
+  box-shadow: 0 0 15px rgba(37,99,235,0.4);
 }
 
-/* Style untuk judul Portal Pelanggan */
+/* ===== HEADER TEXT ===== */
 .login-header h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 1rem !important;
+  color: #94a3b8 !important;
+  letter-spacing: 1px;
 }
 
-/* Style untuk header perusahaan */
 .login-header p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
-  color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== TABLE (kalau ada) ===== */
+table {
+  background: #0f172a !important;
+  color: #e5e7eb !important;
+}
+
+table th {
+  background: #020617 !important;
+  color: #9ca3af !important;
+}
+
+table td {
+  border-color: rgba(255,255,255,0.05) !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+/* ===== LINK ===== */
+a {
+  color: #3b82f6 !important;
+}
+a:hover {
+  color: #60a5fa !important;
+}
+
+/* ===== GLOBAL SMOOTH ===== */
+* {
+  transition: all 0.15s ease-in-out;
 }

